@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Notification"
+            android:textSize="16dp">
+
+        </TextView>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/itemSelector"
+            android:tooltipText="Select an item">
+        </Spinner>
+
+        <EditText
+            android:id="@+id/newPriceBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="120dp"
+            android:hint="Enter a price"
+            android:textSize="16dp">
+
+        </EditText>
+
+        <Button
+            android:id="@+id/setNotificationButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="120dp"
+            android:text="NOTIFY"
+            android:textSize="16dp"></Button>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Users"
+            android:textSize="16dp"></TextView>
+
+        <EditText
+            android:id="@+id/user1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="120dp"
+            android:hint="User #1"
+            android:textSize="16dp"></EditText>
+
+        <EditText
+            android:id="@+id/user2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="120dp"
+            android:hint="User #2"
+            android:textSize="16dp"></EditText>
+
+        <EditText
+            android:id="@+id/user3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="120dp"
+            android:hint="User #3"
+            android:textSize="16dp"></EditText>
+
+        <EditText
+            android:id="@+id/user4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="120dp"
+            android:hint="User #4"
+            android:textSize="16dp"></EditText>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
