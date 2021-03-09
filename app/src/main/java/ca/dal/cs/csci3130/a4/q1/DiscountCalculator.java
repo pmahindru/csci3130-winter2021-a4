@@ -6,11 +6,12 @@ public class DiscountCalculator implements DiscountCalculationRule {
 
     public DiscountCalculator(double discountRate) {
         //missing code
+        this.discountRate = discountRate;
     }
 
     @Override
     public double calculate(CustomerSRP customer) {
         //buggy code
-        return 0;
+        return discountRate * customer.getLoyaltyCard().getCurrentPoints();
     }
 }
