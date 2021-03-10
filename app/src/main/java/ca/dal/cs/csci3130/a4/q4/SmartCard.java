@@ -5,12 +5,18 @@ public class SmartCard implements IDebitCard {
 
     public SmartCard(SmartCardAdapter adapter) {
         //missing code
+        this.adapter = adapter;
     }
 
     @Override
     public boolean pay(String paymentType, int amount) {
-        boolean paid = false;
-        //missing code
+        boolean paid = true;
+        if (paymentType.equalsIgnoreCase(CardConstants.CREDIT_PAYMENT)){
+            new MasterCard().payInCredit(amount);
+
+        } else if (paymentType.equalsIgnoreCase(CardConstants.DEBIT_PAYMENT)) {
+            System.out.println("DEBIT_PAYMENT " + amount);
+        }
         return paid;
     }
 }

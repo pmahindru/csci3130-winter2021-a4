@@ -6,6 +6,6 @@ public class MasterCard implements ICreditCard {
     public boolean payInCredit(int amount) {
         //buggy code
         System.out.println("Paid by Mastercard: " + amount);
-        return false;
+        return true;
     }
 }
