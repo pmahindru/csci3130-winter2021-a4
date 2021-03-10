@@ -6,10 +6,11 @@ public class CashInTransaction implements Transaction {
 
     public CashInTransaction(int point2Cash) {
         //missing code
+        this.point2Cash = point2Cash;
     }
 
     public void performTransaction(ILoyaltyCard card) {
         //missing code
+        card.setCurrentPoints(card.getCurrentPoints() - point2Cash);
     }
-
 }
