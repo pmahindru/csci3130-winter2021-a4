@@ -11,6 +11,8 @@ public class CashInTransaction implements Transaction {
 
     public void performTransaction(ILoyaltyCard card) {
         //missing code
-        card.setCurrentPoints(card.getCurrentPoints() - point2Cash);
+        if (card.getCurrentPoints() > MINIMUM_POINTS && card.getCurrentPoints() > point2Cash){
+            card.setCurrentPoints(card.getCurrentPoints()-point2Cash);
+        }
     }
 }

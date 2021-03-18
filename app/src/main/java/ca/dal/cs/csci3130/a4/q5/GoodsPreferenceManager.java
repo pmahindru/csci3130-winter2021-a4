@@ -11,15 +11,21 @@ public class GoodsPreferenceManager implements IPreferenceManager {
     @Override
     public void attach(Observer user) {
         //missing code
+        users.add(user);
     }
 
     public void setMessage(String message) {
         //missing code
+        this.message = message;
+        notifyAllUsers();
     }
 
     @Override
     public void notifyAllUsers() {
         //missing code
+        for (Observer user : users){
+            user.update(message);
+        }
     }
 
 }

@@ -14,7 +14,7 @@ public class BuyProduceTransaction implements Transaction {
     @Override
     public void performTransaction(ILoyaltyCard card) {
         //missing code
-        if (card.getCurrentPoints() > MINIMUM_POINTS){
+        if (card.getCurrentPoints() > MINIMUM_POINTS && card.getCurrentPoints() > points2Buy){
             card.setCurrentPoints(card.getCurrentPoints()-points2Buy);
         }
     }
