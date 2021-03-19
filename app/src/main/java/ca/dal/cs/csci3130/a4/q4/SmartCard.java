@@ -12,7 +12,7 @@ public class SmartCard implements IDebitCard {
     public boolean pay(String paymentType, int amount) {
         boolean paid = true;
         if (paymentType.equalsIgnoreCase(CardConstants.CREDIT_PAYMENT)){
-            new MasterCard().payInCredit(amount);
+            adapter.pay(CardConstants.CREDIT_PAYMENT,amount);
 
         } else if (paymentType.equalsIgnoreCase(CardConstants.DEBIT_PAYMENT)) {
             System.out.println("DEBIT_PAYMENT " + amount);

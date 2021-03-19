@@ -8,6 +8,5 @@ public class ItemFactoryProducer {
         else {
             return new GoodsFactory();
         }
-
     }
 }
